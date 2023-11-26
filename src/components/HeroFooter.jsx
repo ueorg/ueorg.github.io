@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 export default function HeroFooter({ children }) {
   const { scrollY } = useScroll();
   const opacity = useTransform(scrollY, [0, 300], [1, 0]);
-  const y = useTransform(scrollY, [0, 300], [0, -100]);
+  const y = useTransform(scrollY, [0, 300], [0, 35]);
 
   return (
     <motion.div
